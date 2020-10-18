@@ -1,0 +1,57 @@
+.features {
+
+  .features-info{
+
+    h2{
+      @include sub-head;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border: 0.2rem solid black;
+    }
+
+    ul{
+      text-align: left;
+
+      li{
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+      }
+    }
+    
+  }
+
+  img{
+    max-width: 40%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    .features-info{
+      margin-top: 4rem;
+
+      h2{
+        @include sub-head;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border: 5px solid black;
+      }
+
+      ul{
+  
+        li{
+          margin-bottom: 2.5rem;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    img{
+      max-width: 55%;
+      height: auto;
+    }
+  }
+}

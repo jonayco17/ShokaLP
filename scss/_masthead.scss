@@ -1,0 +1,44 @@
+nav #brand{
+  font-size: 0.79rem;
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+ 
+}
+
+header.masthead {
+  position: relative;
+  background-color: $gray-800;
+  background: url('../img/bg-masthead.webp') no-repeat center center;
+  @include background-cover;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  .overlay {
+    position: absolute;
+    background-color: $gray-900;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+  }
+  h1 {
+    @include sub-head;
+    font-size: 1.4rem;
+  }
+  img{
+    max-width: 80%;
+    height: auto;
+  }
+  @media (min-width: 768px) {
+    padding-top: 15rem;
+    padding-bottom: 12rem;
+    h1 {
+      font-size: 3rem;
+    }
+    img{
+      max-width: 60%;
+      height: auto;
+    }
+  }
+}
